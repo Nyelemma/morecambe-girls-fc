@@ -34,8 +34,8 @@ const lines = [
   '- Suitable training clothing',
   '',
   'CONTACT',
-  'Email: info@morecombegirlsfc.co.uk',
-  'Website: www.morecombegirlsfc.co.uk',
+  'Email: info@morecambegirlsfc.co.uk',
+  'Website: www.morecambegirlsfc.co.uk',
   '',
   'Replace this placeholder with your official welcome pack.',
 ];

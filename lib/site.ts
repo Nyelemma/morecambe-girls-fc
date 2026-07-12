@@ -4,8 +4,8 @@ export const siteConfig = {
   tagline: 'Inspiring the Next Generation of Footballers',
   description:
     'Morecambe Girls FC is a thriving grassroots girls\' football club in Lancashire, offering pathways from Wild Cats through to U16. Part of the Morecambe FC family.',
-  url: 'https://www.morecombegirlsfc.co.uk',
-  email: 'info@morecombegirlsfc.co.uk',
+  url: 'https://www.morecambegirlsfc.co.uk',
+  email: 'info@morecambegirlsfc.co.uk',
   phone: '',
   address: {
     line1: 'Mazuma Stadium',
@@ -16,9 +16,9 @@ export const siteConfig = {
     country: 'United Kingdom',
   },
   social: {
-    facebook: 'https://facebook.com/morecombegirlsfc',
-    instagram: 'https://instagram.com/morecombegirlsfc',
-    twitter: 'https://twitter.com/morecombegirlsfc',
+    facebook: 'https://facebook.com/morecambegirlsfc',
+    instagram: 'https://instagram.com/morecambegirlsfc',
+    twitter: 'https://twitter.com/morecambegirlsfc',
   },
   parentClub: {
     name: 'Morecambe FC',
@@ -245,7 +245,7 @@ export const faqItems = [
   {
     question: 'How do I join Morecambe Girls FC?',
     answer:
-      'Get in touch via our contact page or email us at info@morecombegirlsfc.co.uk. Tell us your daughter\'s age and experience level, and we\'ll guide you to the right team or Wild Cats session. All new players are welcome to attend a taster session.',
+      'Get in touch via our contact page or email us at info@morecambegirlsfc.co.uk. Tell us your daughter\'s age and experience level, and we\'ll guide you to the right team or Wild Cats session. All new players are welcome to attend a taster session.',
   },
   {
     question: 'What age groups do you offer?',
@@ -270,7 +270,7 @@ export const faqItems = [
   {
     question: 'How do I contact a coach?',
     answer:
-      'For general enquiries, use our contact form or email info@morecombegirlsfc.co.uk. For team-specific questions, include the age group in your message and we\'ll connect you with the right coach.',
+      'For general enquiries, use our contact form or email info@morecambegirlsfc.co.uk. For team-specific questions, include the age group in your message and we\'ll connect you with the right coach.',
   },
   {
     question: 'How much does it cost to play?',
