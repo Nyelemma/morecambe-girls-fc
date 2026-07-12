@@ -1,0 +1,49 @@
+import { createPageMetadata } from '@/lib/metadata';
+import { competitiveTeams } from '@/lib/site';
+import { PageHero } from '@/components/layout/page-hero';
+import { Section } from '@/components/layout/section';
+import { SectionHeader } from '@/components/ui/section-header';
+import { TeamCard } from '@/components/cards/team-card';
+import { CtaBanner } from '@/components/ui/section-header';
+
+export const metadata = createPageMetadata({
+  title: 'Teams',
+  description:
+    'Explore all age groups at Morecambe Girls FC — from Wild Cats to U16. Find the right team for your daughter.',
+  path: '/teams',
+});
+
+export default function TeamsPage() {
+  return (
+    <>
+      <PageHero
+        title="Our Teams"
+        subtitle="A complete pathway from Wild Cats to U16, with teams for every age group."
+        image="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=1920&q=80"
+      />
+
+      <Section>
+        <SectionHeader
+          title="All Age Groups"
+          subtitle="Select a team to find out more. Each page will soon include coaches, fixtures, league information and news."
+        />
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {competitiveTeams.map((team) => (
+            <TeamCard key={team.slug} team={team} />
+          ))}
+        </div>
+      </Section>
+
+      <Section background="light">
+        <CtaBanner
+          title="Not Sure Which Team?"
+          description="Get in touch and we'll help you find the right age group for your daughter."
+          primaryLabel="Contact Us"
+          primaryHref="/contact"
+          secondaryLabel="View FAQ"
+          secondaryHref="/faq"
+        />
+      </Section>
+    </>
+  );
+}

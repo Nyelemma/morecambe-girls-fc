@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="64" fill="#941D1E"/>
+  <rect x="32" y="32" width="448" height="448" rx="48" fill="none" stroke="#C5A076" stroke-width="16"/>
+  <text x="256" y="280" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="72" font-weight="bold">MGFC</text>
+</svg>

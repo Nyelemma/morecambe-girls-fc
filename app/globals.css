@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-shrimp: 148 29 30;
+    --color-gold: 197 160 118;
+    --color-pitch: 26 8 9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-pitch-700 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .section-heading {
+    @apply font-display text-3xl font-bold uppercase tracking-wide text-pitch-900 md:text-4xl lg:text-5xl;
+  }
+
+  .section-subheading {
+    @apply mt-4 max-w-2xl text-lg text-pitch-600 md:text-xl;
+  }
+
+  .pitch-frame {
+    position: relative;
+  }
+
+  .pitch-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid rgba(197, 160, 118, 0.35);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .pitch-frame::after {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    pointer-events: none;
+    z-index: 10;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
