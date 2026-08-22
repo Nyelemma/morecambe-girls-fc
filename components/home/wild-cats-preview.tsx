@@ -6,9 +6,9 @@ export function WildCatsPreview() {
   return (
     <Section background="dark" id="wild-cats">
       <div className="grid items-center gap-12 lg:grid-cols-2">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-sm pitch-frame">
+        <div className="relative aspect-video overflow-hidden rounded-sm pitch-frame">
           <Image
-            src="https://images.unsplash.com/photo-1518607927030-34f03d1a42bb?w=800&q=80"
+            src="/wild-cats-homepage.jpg"
             alt="Young girls enjoying football at Wild Cats session"
             fill
             className="object-cover"
