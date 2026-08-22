@@ -6,14 +6,20 @@ export const siteConfig = {
     'Morecambe Girls FC is a thriving grassroots girls\' football club in Lancashire, offering pathways from Wild Cats through to U16. Part of the Morecambe FC family.',
   url: 'https://www.morecambegirlsfc.co.uk',
   email: 'info@morecambegirlsfc.co.uk',
-  phone: '',
-  address: {
-    line1: 'Mazuma Stadium',
-    line2: 'Christie Way',
-    city: 'Morecambe',
-    county: 'Lancashire',
-    postcode: 'LA4 4TB',
-    country: 'United Kingdom',
+  contacts: {
+    chairman: {
+      name: 'Nick Barrett',
+      role: 'Chairman',
+      phone: '07814 276448',
+      phoneHref: 'tel:+447814276448',
+    },
+  },
+  links: {
+    clubShop: 'https://www.morecambegirlsfc.clubstore.uk/',
+    safeguarding:
+      'https://www.thefa.com/football-rules-governance/safeguarding',
+    parentsCodeOfConduct:
+      'https://www.thefa.com/-/media/cfa/essexfa/files/welfare/fa-respect-code-of-conduct-spectators-parents.ashx',
   },
   social: {
     facebook: 'https://facebook.com/morecambegirlsfc',
@@ -47,11 +53,7 @@ export type NavLink = {
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  {
-    label: 'Our Teams',
-    href: '/teams',
-    children: [], // populated after teams array
-  },
+  { label: 'Our Teams', href: '/teams' },
   { label: 'Wild Cats', href: '/wild-cats' },
   { label: 'Sponsors', href: '/sponsors' },
   { label: 'FAQ', href: '/faq' },
@@ -199,16 +201,6 @@ export const teams: Team[] = [
   },
 ];
 
-export const competitiveTeams = teams.filter((team) => !team.isWildCats);
-
-const ourTeamsNav = navLinks.find((link) => link.label === 'Our Teams');
-if (ourTeamsNav) {
-  ourTeamsNav.children = competitiveTeams.map((team) => ({
-    label: team.name,
-    href: `/teams/${team.slug}`,
-  }));
-}
-
 export const clubValues = [
   {
     title: 'Ambition',
@@ -301,24 +293,11 @@ export const sponsorshipOpportunities = [
   {
     title: 'Team Sponsor',
     description:
-      'Sponsor a specific age group team with branding on training kit and team page on our website.',
+      'Sponsor a specific age group team with branding on training kit and recognition across our website.',
   },
   {
     title: 'Community Partner',
     description:
       'Support the club and gain recognition across our digital channels and matchday programme.',
   },
-] as const;
-
-export function getTeamBySlug(slug: string): Team | undefined {
-  return teams.find((team) => team.slug === slug);
-}
-
-export const teamPlaceholderSections = [
-  'Coaches',
-  'Fixtures',
-  'League',
-  'Gallery',
-  'News',
-  'Contact',
 ] as const;

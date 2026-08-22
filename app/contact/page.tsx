@@ -4,7 +4,7 @@ import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { ContactForm } from '@/components/forms/contact-form';
-import { Facebook, Instagram, Twitter, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, Phone } from 'lucide-react';
 
 export const metadata = createPageMetadata({
   title: 'Contact',
@@ -55,16 +55,18 @@ export default function ContactPage() {
                 <Mail className="mt-0.5 h-5 w-5 shrink-0 text-shrimp" aria-hidden />
                 <span>{siteConfig.email}</span>
               </a>
-              <div className="flex items-start gap-3 text-pitch-600">
-                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-shrimp" aria-hidden />
-                <address className="not-italic">
-                  {siteConfig.address.line1}
-                  <br />
-                  {siteConfig.address.line2}
-                  <br />
-                  {siteConfig.address.city}, {siteConfig.address.postcode}
-                </address>
-              </div>
+              <a
+                href={siteConfig.contacts.chairman.phoneHref}
+                className="flex items-start gap-3 text-pitch-600 transition-colors hover:text-shrimp"
+              >
+                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-shrimp" aria-hidden />
+                <span>
+                  <strong className="block font-semibold text-pitch-900">
+                    {siteConfig.contacts.chairman.name}, {siteConfig.contacts.chairman.role}
+                  </strong>
+                  {siteConfig.contacts.chairman.phone}
+                </span>
+              </a>
             </div>
 
             <div className="mt-8">
@@ -123,29 +125,6 @@ export default function ContactPage() {
         </div>
       </Section>
 
-      <Section background="light">
-        <SectionHeader
-          title="Find Us"
-          subtitle="Training and home fixtures take place at venues across the Morecambe area."
-          align="center"
-        />
-        <div className="mx-auto max-w-4xl overflow-hidden rounded-sm border border-pitch-100 shadow-sm">
-          <div className="flex aspect-[16/7] items-center justify-center bg-pitch-100">
-            <div className="text-center">
-              <MapPin className="mx-auto h-10 w-10 text-pitch-400" aria-hidden />
-              <p className="mt-3 font-display text-lg font-semibold uppercase tracking-wide text-pitch-600">
-                Google Maps
-              </p>
-              <p className="mt-1 text-sm text-pitch-500">
-                {siteConfig.address.city}, {siteConfig.address.postcode}
-              </p>
-              <p className="mt-2 text-xs text-pitch-400">
-                Map embed placeholder — replace with Google Maps iframe
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import { createPageMetadata } from '@/lib/metadata';
-import { competitiveTeams } from '@/lib/site';
+import { teams } from '@/lib/site';
 import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
@@ -24,11 +24,11 @@ export default function TeamsPage() {
 
       <Section>
         <SectionHeader
-          title="All Age Groups"
-          subtitle="Select a team to find out more. Each page will soon include coaches, fixtures, league information and news."
+          title="Every Team & Age Group"
+          subtitle="Our pathway gives girls a welcoming place to play and develop at every stage, from their first session through to U16 football."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {competitiveTeams.map((team) => (
+          {teams.map((team) => (
             <TeamCard key={team.slug} team={team} />
           ))}
         </div>
