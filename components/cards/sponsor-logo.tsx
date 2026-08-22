@@ -1,26 +1,39 @@
+import Image from 'next/image';
+
 type SponsorLogoProps = {
   name: string;
   tier?: string;
   href?: string;
+  logo?: string;
 };
 
-export function SponsorLogo({ name, tier, href }: SponsorLogoProps) {
+export function SponsorLogo({ name, tier, href, logo }: SponsorLogoProps) {
   const content = (
     <>
       <div
         className="flex h-16 w-full items-center justify-center rounded-sm bg-pitch-50"
         aria-hidden
       >
-        <span className="font-display text-lg font-bold uppercase tracking-wider text-pitch-300">
-          {href ? name : 'Logo'}
-        </span>
+        {logo ? (
+          <div className="relative h-14 w-14">
+            <Image
+              src={logo}
+              alt=""
+              fill
+              className="object-contain"
+              sizes="56px"
+            />
+          </div>
+        ) : (
+          <span className="font-display text-lg font-bold uppercase tracking-wider text-pitch-300">
+            {href ? name : 'Logo'}
+          </span>
+        )}
       </div>
       <p className="mt-3 font-display text-sm font-semibold uppercase tracking-wide text-pitch-800">
         {name}
       </p>
-      {tier && (
-        <p className="mt-1 text-xs text-pitch-500">{tier}</p>
-      )}
+      {tier && <p className="mt-1 text-xs text-pitch-500">{tier}</p>}
     </>
   );
 

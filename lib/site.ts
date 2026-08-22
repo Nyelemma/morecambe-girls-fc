@@ -199,6 +199,7 @@ export type Sponsor = {
   name: string;
   tier: string;
   href?: string;
+  logo?: string;
 };
 
 export const sponsors: Sponsor[] = [
@@ -206,6 +207,7 @@ export const sponsors: Sponsor[] = [
     name: 'MN Coaching',
     tier: 'Club Sponsor',
     href: 'https://mncoaching.co.uk',
+    logo: '/mn-coaching-logo.png',
   },
   { name: 'Local Business 1', tier: 'Principal Partner' },
   { name: 'Local Business 2', tier: 'Gold Sponsor' },
