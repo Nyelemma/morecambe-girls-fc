@@ -33,7 +33,7 @@ export const siteConfig = {
   brand: {
     logo: '/morecambe-fc-badge.png',
     colors: {
-      red: '#941D1E',
+      red: '#981915',
       gold: '#C5A076',
       white: '#FFFFFF',
     },
@@ -66,7 +66,6 @@ export type Team = {
   shortName: string;
   ageRange: string;
   description: string;
-  image: string;
   isWildCats?: boolean;
 };
 
@@ -78,8 +77,6 @@ export const teams: Team[] = [
     ageRange: 'Ages 5–11',
     description:
       'Fun, non-competitive football sessions designed to introduce girls to the beautiful game in a safe, supportive environment.',
-    image:
-      'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80',
     isWildCats: true,
   },
   {
@@ -88,8 +85,6 @@ export const teams: Team[] = [
     shortName: 'Under 7s',
     ageRange: 'Under 7',
     description: 'Building confidence, friendships and a love for football.',
-    image:
-      'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800&q=80',
   },
   {
     slug: 'under-8s',
@@ -97,8 +92,6 @@ export const teams: Team[] = [
     shortName: 'Under 8s',
     ageRange: 'Under 8',
     description: 'Developing fundamental skills through structured training and matches.',
-    image:
-      'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80',
   },
   {
     slug: 'under-9s',
@@ -106,8 +99,6 @@ export const teams: Team[] = [
     shortName: 'Under 9s',
     ageRange: 'Under 9',
     description: 'Growing technical ability and teamwork on and off the pitch.',
-    image:
-      'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&q=80',
   },
   {
     slug: 'under-11-reds',
@@ -115,8 +106,6 @@ export const teams: Team[] = [
     shortName: 'Under 11 Reds',
     ageRange: 'Under 11',
     description: 'Developing tactical awareness and match intelligence in competitive league football.',
-    image:
-      'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80',
   },
   {
     slug: 'under-11-blues',
@@ -124,8 +113,6 @@ export const teams: Team[] = [
     shortName: 'Under 11 Blues',
     ageRange: 'Under 11',
     description: 'Developing tactical awareness and match intelligence in competitive league football.',
-    image:
-      'https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&q=80',
   },
   {
     slug: 'under-12s',
@@ -133,8 +120,6 @@ export const teams: Team[] = [
     shortName: 'Under 12s',
     ageRange: 'Under 12',
     description: 'Competing in league football while nurturing individual potential.',
-    image:
-      'https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&q=80',
   },
   {
     slug: 'u13-reds',
@@ -142,8 +127,6 @@ export const teams: Team[] = [
     shortName: 'U13 Reds',
     ageRange: 'Under 13',
     description: 'Preparing players for the demands of youth football.',
-    image:
-      'https://images.unsplash.com/photo-1508098682722-e99b9f0a9335?w=800&q=80',
   },
   {
     slug: 'u13-blues',
@@ -151,8 +134,6 @@ export const teams: Team[] = [
     shortName: 'U13 Blues',
     ageRange: 'Under 13',
     description: 'Preparing players for the demands of youth football.',
-    image:
-      'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&q=80',
   },
   {
     slug: 'u14-reds',
@@ -160,8 +141,6 @@ export const teams: Team[] = [
     shortName: 'U14 Reds',
     ageRange: 'Under 14',
     description: 'Elite grassroots football with professional standards.',
-    image:
-      'https://images.unsplash.com/photo-1489944440615-453fc7b73bce?w=800&q=80',
   },
   {
     slug: 'u14-blues',
@@ -169,8 +148,6 @@ export const teams: Team[] = [
     shortName: 'U14 Blues',
     ageRange: 'Under 14',
     description: 'Elite grassroots football with professional standards.',
-    image:
-      'https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&q=80',
   },
   {
     slug: 'u15-reds',
@@ -178,8 +155,6 @@ export const teams: Team[] = [
     shortName: 'U15 Reds',
     ageRange: 'Under 15',
     description: 'High-performance training and competitive league fixtures.',
-    image:
-      'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80',
   },
   {
     slug: 'u15-blues',
@@ -187,8 +162,6 @@ export const teams: Team[] = [
     shortName: 'U15 Blues',
     ageRange: 'Under 15',
     description: 'High-performance training and competitive league fixtures.',
-    image:
-      'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&q=80',
   },
   {
     slug: 'u16s',
@@ -196,8 +169,6 @@ export const teams: Team[] = [
     shortName: 'U16s',
     ageRange: 'Under 16',
     description: 'Our senior youth team, preparing players for adult football.',
-    image:
-      'https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&q=80',
   },
 ];
 
