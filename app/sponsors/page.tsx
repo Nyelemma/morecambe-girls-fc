@@ -52,6 +52,7 @@ export default function SponsorsPage() {
               name={sponsor.name}
               tier={sponsor.tier}
               href={sponsor.href}
+              logo={sponsor.logo}
             />
           ))}
         </div>
