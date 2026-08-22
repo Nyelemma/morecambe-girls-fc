@@ -195,7 +195,18 @@ export const clubValues = [
   },
 ] as const;
 
-export const sponsors = [
+export type Sponsor = {
+  name: string;
+  tier: string;
+  href?: string;
+};
+
+export const sponsors: Sponsor[] = [
+  {
+    name: 'MN Coaching',
+    tier: 'Club Sponsor',
+    href: 'https://mncoaching.co.uk',
+  },
   { name: 'Local Business 1', tier: 'Principal Partner' },
   { name: 'Local Business 2', tier: 'Gold Sponsor' },
   { name: 'Local Business 3', tier: 'Gold Sponsor' },
