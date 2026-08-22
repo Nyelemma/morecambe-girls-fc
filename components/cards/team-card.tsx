@@ -14,8 +14,8 @@ export function TeamCard({ team, className }: TeamCardProps) {
         className
       )}
     >
-      <div className="absolute inset-x-0 top-0 h-1 bg-shrimp" aria-hidden />
-      <p className="font-display text-xs font-semibold uppercase tracking-widest text-shrimp">
+      <div className="absolute inset-x-0 top-0 h-1 bg-gold" aria-hidden />
+      <p className="font-display text-xs font-semibold uppercase tracking-widest text-gold-600">
         {team.ageRange}
       </p>
       <h3 className="mt-2 font-display text-2xl font-bold uppercase tracking-wide text-pitch-900">

@@ -52,7 +52,7 @@ export function Hero() {
         </div>
       </Container>
 
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-shrimp via-gold to-shrimp" aria-hidden />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gold" aria-hidden />
     </section>
   );
 }

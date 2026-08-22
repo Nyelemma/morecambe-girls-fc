@@ -7,8 +7,8 @@ export function WelcomePack() {
   return (
     <Section background="light" id="welcome-pack">
       <div className="mx-auto max-w-3xl text-center">
-        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-shrimp/10">
-          <FileText className="h-8 w-8 text-shrimp" aria-hidden />
+        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gold/15">
+          <FileText className="h-8 w-8 text-gold-600" aria-hidden />
         </div>
         <h2 className="section-heading">Welcome Pack</h2>
         <p className="section-subheading mx-auto">

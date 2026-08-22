@@ -75,7 +75,7 @@ export default function AboutPage() {
           {clubValues.map((value) => (
             <div
               key={value.title}
-              className="rounded-sm border-t-4 border-shrimp bg-white p-6 shadow-sm"
+              className="rounded-sm border-t-4 border-gold bg-white p-6 shadow-sm"
             >
               <h3 className="font-display text-xl font-bold uppercase tracking-wide text-pitch-900">
                 {value.title}
@@ -112,7 +112,7 @@ export default function AboutPage() {
             },
           ].map((item) => (
             <div key={item.step} className="relative">
-              <span className="font-display text-5xl font-bold text-shrimp/15">
+              <span className="font-display text-5xl font-bold text-pitch-200">
                 {item.step}
               </span>
               <h3 className="mt-2 font-display text-xl font-bold uppercase tracking-wide text-pitch-900">

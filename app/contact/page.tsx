@@ -50,16 +50,16 @@ export default function ContactPage() {
             <div className="space-y-6">
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="flex items-start gap-3 text-pitch-600 transition-colors hover:text-shrimp"
+                className="flex items-start gap-3 text-pitch-600 transition-colors hover:text-pitch-900"
               >
-                <Mail className="mt-0.5 h-5 w-5 shrink-0 text-shrimp" aria-hidden />
+                <Mail className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" aria-hidden />
                 <span>{siteConfig.email}</span>
               </a>
               <a
                 href={siteConfig.contacts.chairman.phoneHref}
-                className="flex items-start gap-3 text-pitch-600 transition-colors hover:text-shrimp"
+                className="flex items-start gap-3 text-pitch-600 transition-colors hover:text-pitch-900"
               >
-                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-shrimp" aria-hidden />
+                <Phone className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" aria-hidden />
                 <span>
                   <strong className="block font-semibold text-pitch-900">
                     {siteConfig.contacts.chairman.name}, {siteConfig.contacts.chairman.role}
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   href={siteConfig.social.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-sm bg-pitch-50 text-pitch-700 transition-colors hover:bg-shrimp hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-sm bg-pitch-50 text-pitch-700 transition-colors hover:bg-pitch hover:text-white"
                   aria-label="Facebook"
                 >
                   <Facebook className="h-5 w-5" />
@@ -87,7 +87,7 @@ export default function ContactPage() {
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-sm bg-pitch-50 text-pitch-700 transition-colors hover:bg-shrimp hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-sm bg-pitch-50 text-pitch-700 transition-colors hover:bg-pitch hover:text-white"
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5" />
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   href={siteConfig.social.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-sm bg-pitch-50 text-pitch-700 transition-colors hover:bg-shrimp hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-sm bg-pitch-50 text-pitch-700 transition-colors hover:bg-pitch hover:text-white"
                   aria-label="Twitter / X"
                 >
                   <Twitter className="h-5 w-5" />

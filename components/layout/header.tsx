@@ -74,7 +74,7 @@ function DesktopNavDropdown({
                   className={cn(
                     'block px-4 py-2.5 text-sm transition-colors',
                     childActive
-                      ? 'bg-shrimp/20 text-white'
+                      ? 'bg-white/10 text-gold'
                       : 'text-white/80 hover:bg-white/5 hover:text-white'
                   )}
                 >
@@ -106,7 +106,7 @@ function MobileNavDropdown({
         className={cn(
           'flex w-full items-center justify-between rounded-sm px-4 py-3 font-display text-base font-semibold uppercase tracking-wider',
           isActive
-            ? 'bg-shrimp text-white'
+            ? 'bg-white/10 text-gold'
             : 'text-white/80 hover:bg-white/5 hover:text-white'
         )}
         aria-expanded={open}
@@ -126,7 +126,7 @@ function MobileNavDropdown({
             className={cn(
               'block rounded-sm px-4 py-2.5 text-sm font-semibold',
               pathname === link.href
-                ? 'bg-shrimp/30 text-white'
+                ? 'bg-white/10 text-gold'
                 : 'text-gold hover:bg-white/5'
             )}
           >
@@ -142,7 +142,7 @@ function MobileNavDropdown({
                 className={cn(
                   'block rounded-sm px-4 py-2.5 text-sm',
                   childActive
-                    ? 'bg-shrimp/30 text-white'
+                    ? 'bg-white/10 text-gold'
                     : 'text-white/70 hover:bg-white/5 hover:text-white'
                 )}
               >
@@ -188,16 +188,16 @@ export function Header() {
           : 'bg-pitch/90 backdrop-blur-sm'
       )}
     >
-      <div className="border-b border-white/15 bg-shrimp">
+      <div className="border-b border-white/10 bg-pitch-900">
         <Container className="flex min-h-10 items-center justify-between gap-2 py-1.5">
           <nav className="flex items-center gap-1 sm:gap-4" aria-label="Club and FA resources">
             <a
               href={siteConfig.links.safeguarding}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-sm px-1.5 py-1 font-display text-xs font-semibold uppercase tracking-wide text-white/90 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-1.5 rounded-sm px-1.5 py-1 font-display text-xs font-semibold uppercase tracking-wide text-white/75 transition-colors hover:text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
             >
-              <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden />
+              <ShieldCheck className="h-4 w-4 shrink-0 text-gold" aria-hidden />
               <span className="sm:hidden">Safety</span>
               <span className="hidden sm:inline">FA Safeguarding</span>
               <span className="sr-only">(opens in a new tab)</span>
@@ -206,9 +206,9 @@ export function Header() {
               href={siteConfig.links.parentsCodeOfConduct}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-sm px-1.5 py-1 font-display text-xs font-semibold uppercase tracking-wide text-white/90 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-1.5 rounded-sm px-1.5 py-1 font-display text-xs font-semibold uppercase tracking-wide text-white/75 transition-colors hover:text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
             >
-              <FileCheck className="h-4 w-4 shrink-0" aria-hidden />
+              <FileCheck className="h-4 w-4 shrink-0 text-gold" aria-hidden />
               <span className="sm:hidden">Conduct</span>
               <span className="hidden sm:inline">Parent &amp; Spectator Code</span>
               <span className="sr-only">(opens in a new tab)</span>
@@ -304,7 +304,7 @@ export function Header() {
                   className={cn(
                     'rounded-sm px-4 py-3 font-display text-base font-semibold uppercase tracking-wider',
                     isActive
-                      ? 'bg-shrimp text-white'
+                      ? 'bg-white/10 text-gold'
                       : 'text-white/80 hover:bg-white/5 hover:text-white'
                   )}
                 >

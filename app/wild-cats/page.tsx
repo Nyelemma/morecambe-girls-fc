@@ -44,7 +44,7 @@ export default function WildCatsPage() {
         subtitle="Fun football for girls aged 5–11 — no experience needed."
         image="https://images.unsplash.com/photo-1518607927030-34f03d1a42bb?w=1920&q=80"
         size="large"
-        overlay="shrimp"
+        overlay="dark"
       />
 
       <Section>
@@ -96,7 +96,7 @@ export default function WildCatsPage() {
               key={benefit.title}
               className="rounded-sm border border-pitch-100 bg-white p-6 shadow-sm"
             >
-              <h3 className="font-display text-lg font-bold uppercase tracking-wide text-shrimp">
+              <h3 className="font-display text-lg font-bold uppercase tracking-wide text-pitch-900">
                 {benefit.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-pitch-600">
