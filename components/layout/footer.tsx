@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, Phone } from 'lucide-react';
 import { siteConfig, navLinks } from '@/lib/site';
 import { Logo } from './logo';
 import { Container } from './container';
@@ -59,22 +59,63 @@ export function Footer() {
                   {siteConfig.email}
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-white/70">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
-                <span>
-                  {siteConfig.address.line1}
-                  <br />
-                  {siteConfig.address.city}, {siteConfig.address.postcode}
-                </span>
+              <li>
+                <a
+                  href={siteConfig.contacts.chairman.phoneHref}
+                  className="flex items-start gap-2 text-sm text-white/70 transition-colors hover:text-white"
+                >
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
+                  <span>
+                    {siteConfig.contacts.chairman.name}, {siteConfig.contacts.chairman.role}
+                    <br />
+                    {siteConfig.contacts.chairman.phone}
+                  </span>
+                </a>
               </li>
             </ul>
           </div>
 
           <div>
             <h2 className="font-display text-sm font-bold uppercase tracking-widest text-gold">
+              Club &amp; FA Links
+            </h2>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <a
+                  href={siteConfig.links.clubShop}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/70 transition-colors hover:text-white"
+                >
+                  Club Shop
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.links.safeguarding}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/70 transition-colors hover:text-white"
+                >
+                  FA Safeguarding
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.links.parentsCodeOfConduct}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/70 transition-colors hover:text-white"
+                >
+                  Parent &amp; Spectator Code
+                </a>
+              </li>
+            </ul>
+
+            <h2 className="mt-6 font-display text-sm font-bold uppercase tracking-widest text-gold">
               Follow Us
             </h2>
-            <div className="mt-4 flex gap-3">
+            <div className="mt-3 flex gap-3">
               <a
                 href={siteConfig.social.facebook}
                 target="_blank"

@@ -5,6 +5,7 @@ import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { CtaBanner } from '@/components/ui/section-header';
 import { Button } from '@/components/ui/button';
+import { ExternalLink, FileCheck, ShieldCheck, ShoppingBag } from 'lucide-react';
 
 export const metadata = createPageMetadata({
   title: 'About Us',
@@ -89,6 +90,66 @@ export default function AboutPage() {
       </Section>
 
       <Section background="light">
+        <SectionHeader
+          title="Club & FA Resources"
+          subtitle="Shop for club kit and find official FA guidance for keeping grassroots football safe, positive and welcoming."
+          align="center"
+        />
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            {
+              title: 'Club Shop',
+              text: 'Order official Morecambe Girls FC clothing and club merchandise.',
+              href: siteConfig.links.clubShop,
+              label: 'Visit the Club Shop',
+              icon: ShoppingBag,
+            },
+            {
+              title: 'FA Safeguarding',
+              text: 'Read the FA’s official safeguarding guidance and resources.',
+              href: siteConfig.links.safeguarding,
+              label: 'View Safeguarding',
+              icon: ShieldCheck,
+            },
+            {
+              title: 'Parent & Spectator Code',
+              text: 'Read the FA Respect code of conduct for parents and spectators.',
+              href: siteConfig.links.parentsCodeOfConduct,
+              label: 'Read the Code',
+              icon: FileCheck,
+            },
+          ].map((resource) => {
+            const Icon = resource.icon;
+
+            return (
+              <article
+                key={resource.title}
+                className="flex flex-col rounded-sm border border-pitch-100 bg-white p-6 shadow-sm"
+              >
+                <Icon className="h-8 w-8 text-shrimp" aria-hidden />
+                <h3 className="mt-5 font-display text-xl font-bold uppercase tracking-wide text-pitch-900">
+                  {resource.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-pitch-600">
+                  {resource.text}
+                </p>
+                <a
+                  href={resource.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-shrimp transition-colors hover:text-shrimp-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-shrimp"
+                >
+                  {resource.label}
+                  <ExternalLink className="h-4 w-4" aria-hidden />
+                  <span className="sr-only">(opens in a new tab)</span>
+                </a>
+              </article>
+            );
+          })}
+        </div>
+      </Section>
+
+      <Section>
         <SectionHeader
           title="Player Development"
           subtitle="A structured pathway from first kick to competitive football."
