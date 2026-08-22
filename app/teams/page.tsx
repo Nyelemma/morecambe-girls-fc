@@ -20,7 +20,7 @@ export default function TeamsPage() {
         title="Our Teams"
         subtitle="A complete pathway from Wild Cats to U16, with teams for every age group."
         image={null}
-        overlay="shrimp"
+        overlay="dark"
       />
 
       <Section>

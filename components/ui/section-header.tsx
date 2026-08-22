@@ -66,8 +66,9 @@ export function CtaBanner({
   secondaryHref,
 }: CtaBannerProps) {
   return (
-    <div className="relative overflow-hidden rounded-sm bg-shrimp px-8 py-12 text-center md:px-16 md:py-16">
+    <div className="relative overflow-hidden rounded-sm bg-pitch px-8 py-12 text-center md:px-16 md:py-16">
       <div className="absolute inset-0 bg-pitch-lines opacity-20" aria-hidden />
+      <div className="absolute inset-x-0 top-0 h-1 bg-shrimp" aria-hidden />
       <div className="relative">
         <h2 className="font-display text-3xl font-bold uppercase tracking-wide text-white md:text-4xl">
           {title}

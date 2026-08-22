@@ -37,7 +37,7 @@ export function AboutPreview() {
               key={value.title}
               className="rounded-sm border border-pitch-100 bg-white p-6 shadow-sm"
             >
-              <h3 className="font-display text-lg font-bold uppercase tracking-wide text-shrimp">
+              <h3 className="font-display text-lg font-bold uppercase tracking-wide text-pitch-900">
                 {value.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-pitch-600">

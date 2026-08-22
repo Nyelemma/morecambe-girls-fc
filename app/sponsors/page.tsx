@@ -70,7 +70,7 @@ export default function SponsorsPage() {
             <ul className="space-y-3">
               {sponsorshipBenefits.map((benefit) => (
                 <li key={benefit} className="flex items-start gap-3">
-                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-shrimp" aria-hidden />
+                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold-600" aria-hidden />
                   <span className="text-pitch-600">{benefit}</span>
                 </li>
               ))}
@@ -85,7 +85,7 @@ export default function SponsorsPage() {
                   key={opportunity.title}
                   className="rounded-sm border border-pitch-100 bg-white p-6 shadow-sm"
                 >
-                  <h3 className="font-display text-lg font-bold uppercase tracking-wide text-shrimp">
+                  <h3 className="font-display text-lg font-bold uppercase tracking-wide text-pitch-900">
                     {opportunity.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-pitch-600">

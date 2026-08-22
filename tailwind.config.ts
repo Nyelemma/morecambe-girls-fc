@@ -24,18 +24,19 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // One club red — used sparingly for CTAs and key accents
         shrimp: {
           DEFAULT: '#981915',
-          50: '#fdf5f5',
-          100: '#f9e8e8',
-          200: '#f0cfcf',
-          300: '#e0a8a8',
-          400: '#c86a6a',
+          50: '#faf6f6',
+          100: '#f3e9e8',
+          200: '#e6d0ce',
+          300: '#d0a4a0',
+          400: '#b45c56',
           500: '#981915',
-          600: '#7a1819',
-          700: '#621314',
-          800: '#4f1011',
-          900: '#3d0d0e',
+          600: '#7f1512',
+          700: '#68110e',
+          800: '#520e0c',
+          900: '#3d0b09',
         },
         gold: {
           DEFAULT: '#C5A076',
@@ -50,18 +51,19 @@ const config: Config = {
           800: '#624f36',
           900: '#52432e',
         },
+        // Neutral charcoal for surfaces and text — not another red family
         pitch: {
-          DEFAULT: '#2a0f10',
-          50: '#faf8f8',
-          100: '#f0ebeb',
-          200: '#ddd4d4',
-          300: '#bfb3b3',
-          400: '#948888',
-          500: '#6b6060',
-          600: '#524a4a',
-          700: '#3f3334',
-          800: '#2a0f10',
-          900: '#1a0809',
+          DEFAULT: '#1c1c1c',
+          50: '#f7f7f7',
+          100: '#eeeeee',
+          200: '#e0e0e0',
+          300: '#c4c4c4',
+          400: '#989898',
+          500: '#6e6e6e',
+          600: '#555555',
+          700: '#404040',
+          800: '#2a2a2a',
+          900: '#141414',
         },
       },
       fontFamily: {
@@ -69,14 +71,14 @@ const config: Config = {
         sans: ['var(--font-source-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        club: '0 8px 30px -6px rgba(152, 25, 21, 0.18)',
-        'club-lg': '0 16px 48px -12px rgba(152, 25, 21, 0.24)',
+        club: '0 8px 30px -6px rgba(28, 28, 28, 0.12)',
+        'club-lg': '0 16px 48px -12px rgba(28, 28, 28, 0.18)',
       },
       backgroundImage: {
         'pitch-lines':
           'linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.08) 49%, rgba(255,255,255,0.08) 51%, transparent 51%)',
         'hero-gradient':
-          'linear-gradient(135deg, rgba(26,8,9,0.94) 0%, rgba(152,25,21,0.88) 50%, rgba(26,8,9,0.96) 100%)',
+          'linear-gradient(135deg, rgba(20,20,20,0.92) 0%, rgba(20,20,20,0.78) 45%, rgba(152,25,21,0.55) 100%)',
       },
     },
   },

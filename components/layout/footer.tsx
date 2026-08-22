@@ -120,7 +120,7 @@ export function Footer() {
                 href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 text-white transition-colors hover:bg-shrimp"
+                className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 text-white transition-colors hover:bg-gold hover:text-pitch-900"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
@@ -129,7 +129,7 @@ export function Footer() {
                 href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 text-white transition-colors hover:bg-shrimp"
+                className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 text-white transition-colors hover:bg-gold hover:text-pitch-900"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
@@ -138,7 +138,7 @@ export function Footer() {
                 href={siteConfig.social.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 text-white transition-colors hover:bg-shrimp"
+                className="flex h-10 w-10 items-center justify-center rounded-sm bg-white/10 text-white transition-colors hover:bg-gold hover:text-pitch-900"
                 aria-label="Twitter / X"
               >
                 <Twitter className="h-5 w-5" />

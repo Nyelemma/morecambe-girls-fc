@@ -50,7 +50,7 @@ export function Logo({
           <span
             className={cn(
               'text-xs font-medium uppercase tracking-widest',
-              isLight ? 'text-gold-300' : 'text-shrimp'
+              isLight ? 'text-gold-300' : 'text-pitch-600'
             )}
           >
             Part of the {siteConfig.parentClub.name} Family

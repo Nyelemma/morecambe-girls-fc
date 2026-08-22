@@ -25,7 +25,7 @@ const variantStyles: Record<ButtonVariant, string> = {
   outline:
     'border-2 border-white text-white hover:bg-white/10 focus-visible:ring-white',
   ghost:
-    'text-shrimp hover:bg-shrimp-50 focus-visible:ring-shrimp',
+    'text-pitch-800 hover:bg-pitch-50 focus-visible:ring-pitch',
   gold:
     'bg-gold text-pitch-900 hover:bg-gold-400 focus-visible:ring-gold shadow-club',
 };
