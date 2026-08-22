@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ChevronDown, Menu, X } from 'lucide-react';
-import { navLinks, type NavLink } from '@/lib/site';
+import { ChevronDown, FileCheck, Menu, ShieldCheck, ShoppingBag, X } from 'lucide-react';
+import { navLinks, siteConfig, type NavLink } from '@/lib/site';
 import { cn } from '@/lib/utils';
 import { Logo } from './logo';
 import { Button } from '@/components/ui/button';
@@ -188,6 +188,45 @@ export function Header() {
           : 'bg-pitch/90 backdrop-blur-sm'
       )}
     >
+      <div className="border-b border-white/15 bg-shrimp">
+        <Container className="flex min-h-10 items-center justify-between gap-2 py-1.5">
+          <nav className="flex items-center gap-1 sm:gap-4" aria-label="Club and FA resources">
+            <a
+              href={siteConfig.links.safeguarding}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-sm px-1.5 py-1 font-display text-xs font-semibold uppercase tracking-wide text-white/90 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden />
+              <span className="sm:hidden">Safety</span>
+              <span className="hidden sm:inline">FA Safeguarding</span>
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
+            <a
+              href={siteConfig.links.parentsCodeOfConduct}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-sm px-1.5 py-1 font-display text-xs font-semibold uppercase tracking-wide text-white/90 transition-colors hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              <FileCheck className="h-4 w-4 shrink-0" aria-hidden />
+              <span className="sm:hidden">Conduct</span>
+              <span className="hidden sm:inline">Parent &amp; Spectator Code</span>
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
+          </nav>
+          <Button
+            href={siteConfig.links.clubShop}
+            external
+            variant="gold"
+            size="sm"
+            className="shrink-0 px-3 py-1.5 text-xs"
+          >
+            <ShoppingBag className="h-4 w-4" aria-hidden />
+            Club Shop
+          </Button>
+        </Container>
+      </div>
+
       <Container className="flex h-18 items-center justify-between py-4">
         <Logo variant="light" badgeSize="sm" />
 
@@ -241,7 +280,7 @@ export function Header() {
 
       {mobileOpen && (
         <nav
-          className="border-t border-white/10 bg-pitch lg:hidden"
+          className="max-h-[calc(100vh-7rem)] overflow-y-auto border-t border-white/10 bg-pitch lg:hidden"
           aria-label="Mobile navigation"
         >
           <Container className="flex flex-col gap-1 py-4">

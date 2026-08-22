@@ -25,13 +25,13 @@ const config: Config = {
     extend: {
       colors: {
         shrimp: {
-          DEFAULT: '#941D1E',
+          DEFAULT: '#981915',
           50: '#fdf5f5',
           100: '#f9e8e8',
           200: '#f0cfcf',
           300: '#e0a8a8',
           400: '#c86a6a',
-          500: '#941D1E',
+          500: '#981915',
           600: '#7a1819',
           700: '#621314',
           800: '#4f1011',
@@ -69,14 +69,14 @@ const config: Config = {
         sans: ['var(--font-source-sans)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        club: '0 8px 30px -6px rgba(148, 29, 30, 0.18)',
-        'club-lg': '0 16px 48px -12px rgba(148, 29, 30, 0.24)',
+        club: '0 8px 30px -6px rgba(152, 25, 21, 0.18)',
+        'club-lg': '0 16px 48px -12px rgba(152, 25, 21, 0.24)',
       },
       backgroundImage: {
         'pitch-lines':
           'linear-gradient(90deg, transparent 49%, rgba(255,255,255,0.08) 49%, rgba(255,255,255,0.08) 51%, transparent 51%)',
         'hero-gradient':
-          'linear-gradient(135deg, rgba(26,8,9,0.94) 0%, rgba(148,29,30,0.88) 50%, rgba(26,8,9,0.96) 100%)',
+          'linear-gradient(135deg, rgba(26,8,9,0.94) 0%, rgba(152,25,21,0.88) 50%, rgba(26,8,9,0.96) 100%)',
       },
     },
   },

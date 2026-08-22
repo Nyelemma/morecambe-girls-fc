@@ -5,7 +5,7 @@ import { Container } from './container';
 type PageHeroProps = {
   title: string;
   subtitle?: string;
-  image?: string;
+  image?: string | null;
   size?: 'default' | 'large';
   overlay?: 'dark' | 'shrimp';
 };
@@ -20,18 +20,20 @@ export function PageHero({
   return (
     <header
       className={cn(
-        'relative flex items-end overflow-hidden pitch-frame',
+        'relative flex items-end overflow-hidden bg-pitch pitch-frame',
         size === 'large' ? 'min-h-[70vh]' : 'min-h-[40vh] md:min-h-[45vh]'
       )}
     >
-      <Image
-        src={image}
-        alt=""
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-      />
+      {image && (
+        <Image
+          src={image}
+          alt=""
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+      )}
       <div
         className={cn(
           'absolute inset-0',
