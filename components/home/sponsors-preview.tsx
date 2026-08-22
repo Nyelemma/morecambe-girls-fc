@@ -18,6 +18,7 @@ export function SponsorsPreview() {
             key={sponsor.name}
             name={sponsor.name}
             tier={sponsor.tier}
+            href={sponsor.href}
           />
         ))}
       </div>
