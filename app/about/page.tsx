@@ -6,6 +6,7 @@ import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { CtaBanner } from '@/components/ui/section-header';
 import { Button } from '@/components/ui/button';
+import { Award, ExternalLink } from 'lucide-react';
 
 export const metadata = createPageMetadata({
   title: 'About Us',
@@ -47,6 +48,43 @@ export default function AboutPage() {
               and life skills. Every girl who pulls on a Morecambe shirt becomes
               part of something bigger than themselves.
             </p>
+            <p>
+              We train and play across Morecambe, Lancaster and Heysham, giving
+              girls throughout the district the chance to be part of the club.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section background="light">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 rounded-sm border border-gold/30 bg-white p-8 text-center shadow-sm md:flex-row md:gap-8 md:p-10 md:text-left">
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gold/15">
+            <Award className="h-8 w-8 text-gold-600" aria-hidden />
+          </div>
+          <div>
+            <p className="font-display text-xs font-semibold uppercase tracking-widest text-gold-600">
+              National Recognition
+            </p>
+            <h2 className="mt-1 font-display text-2xl font-bold uppercase tracking-wide text-pitch-900">
+              King&apos;s Award for Voluntary Service
+            </h2>
+            <p className="mt-3 text-pitch-600 leading-relaxed">
+              In 2023, Morecambe Girls FC received The King&apos;s Award for
+              Voluntary Service — the highest national honour for local volunteer
+              groups in the UK, equivalent to an MBE — in recognition of
+              nurturing an inclusive community and promoting physical and mental
+              wellbeing through girls&apos; football.
+            </p>
+            <a
+              href={siteConfig.links.kingsAward}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-shrimp transition-colors hover:text-shrimp-600"
+            >
+              View the King&apos;s Award for Voluntary Service
+              <ExternalLink className="h-4 w-4" aria-hidden />
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
           </div>
         </div>
       </Section>

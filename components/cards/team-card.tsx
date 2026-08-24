@@ -1,3 +1,4 @@
+import { Trophy } from 'lucide-react';
 import type { Team } from '@/lib/site';
 import { cn } from '@/lib/utils';
 
@@ -24,6 +25,12 @@ export function TeamCard({ team, className }: TeamCardProps) {
       <p className="mt-3 flex-1 text-sm leading-relaxed text-pitch-600">
         {team.description}
       </p>
+      {team.highlight && (
+        <p className="mt-4 inline-flex items-center gap-1.5 self-start rounded-sm bg-shrimp/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-shrimp">
+          <Trophy className="h-3.5 w-3.5 shrink-0" aria-hidden />
+          {team.highlight}
+        </p>
+      )}
     </article>
   );
 }
