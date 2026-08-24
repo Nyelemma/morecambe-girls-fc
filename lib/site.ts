@@ -238,6 +238,7 @@ export const sponsors: Sponsor[] = [
   {
     name: 'Cadman and Forrest',
     tier: 'Club Sponsor',
+    logo: '/sponsors/cadman-and-forrest-logo.jpg',
   },
   {
     name: 'Element',
@@ -271,6 +272,7 @@ export const sponsors: Sponsor[] = [
   {
     name: 'MB Baron',
     tier: 'Club Sponsor',
+    logo: '/sponsors/mb-baron-logo.jpg',
   },
   {
     name: 'Northwest Joinery',
@@ -299,6 +301,7 @@ export const sponsors: Sponsor[] = [
   {
     name: 'Transport Recovery',
     tier: 'Club Sponsor',
+    logo: '/sponsors/transport-recovery-logo.jpg',
   },
   {
     name: 'Turner Scott',
