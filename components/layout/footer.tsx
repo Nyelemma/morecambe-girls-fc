@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Mail, Phone } from 'lucide-react';
+import { Award, Facebook, Instagram, Twitter, Mail, Phone } from 'lucide-react';
 import { siteConfig, navLinks } from '@/lib/site';
 import { Logo } from './logo';
 import { Container } from './container';
@@ -14,9 +14,20 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Logo variant="light" showTagline badgeSize="lg" />
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              Inspiring the next generation of footballers in Morecambe and
-              beyond. Proudly part of the {siteConfig.parentClub.name} family.
+              Inspiring the next generation of footballers across Morecambe,
+              Lancaster and Heysham. Proudly part of the{' '}
+              {siteConfig.parentClub.name} family.
             </p>
+            <a
+              href={siteConfig.links.kingsAward}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-gold transition-colors hover:text-white"
+            >
+              <Award className="h-4 w-4 shrink-0" aria-hidden />
+              King&apos;s Award for Voluntary Service 2023
+              <span className="sr-only">(opens in a new tab)</span>
+            </a>
           </div>
 
           <div>
