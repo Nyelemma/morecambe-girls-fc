@@ -4,7 +4,7 @@ import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { ContactForm } from '@/components/forms/contact-form';
-import { Facebook, Instagram, Twitter, Mail, Phone } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 
 export const metadata = createPageMetadata({
   title: 'Contact',
@@ -102,6 +102,19 @@ export default function ContactPage() {
                   <Twitter className="h-5 w-5" />
                 </a>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="flex items-center gap-2 font-display text-sm font-bold uppercase tracking-widest text-pitch-900">
+                <MapPin className="h-4 w-4 shrink-0 text-gold-600" aria-hidden />
+                Where We Train
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-pitch-600">
+                We train and play across Morecambe, Lancaster and Heysham — the
+                club uses a range of venues rather than a single ground, so
+                exact locations and times are shared with parents when you
+                register.
+              </p>
             </div>
 
             <div className="mt-10 space-y-4">
