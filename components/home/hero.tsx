@@ -8,8 +8,8 @@ export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden pitch-frame">
       <Image
-        src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80"
-        alt="Girls playing football"
+        src="/gallery/team-photo.jpg"
+        alt="Morecambe Girls FC squad posing together on the pitch"
         fill
         priority
         className="object-cover"

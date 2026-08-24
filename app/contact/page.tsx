@@ -40,7 +40,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact Us"
         subtitle="We'd love to hear from you — whether you're a parent, player or potential sponsor."
-        image="https://images.unsplash.com/photo-1489944440615-453fc7b73bce?w=1920&q=80"
+        image="/gallery/team-fun.jpg"
       />
 
       <Section>

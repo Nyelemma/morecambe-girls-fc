@@ -42,7 +42,7 @@ export default function WildCatsPage() {
       <PageHero
         title="Wild Cats"
         subtitle="Fun football for girls aged 5–11 — no experience needed."
-        image="https://images.unsplash.com/photo-1518607927030-34f03d1a42bb?w=1920&q=80"
+        image="/gallery/wildcats-training.jpg"
         size="large"
         overlay="dark"
       />

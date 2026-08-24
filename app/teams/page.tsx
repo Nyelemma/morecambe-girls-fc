@@ -19,7 +19,7 @@ export default function TeamsPage() {
       <PageHero
         title="Our Teams"
         subtitle="A complete pathway from Wild Cats to U16, with teams for every age group."
-        image={null}
+        image="/gallery/match-action.jpg"
         overlay="dark"
       />
 
