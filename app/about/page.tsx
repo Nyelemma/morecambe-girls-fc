@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { createPageMetadata } from '@/lib/metadata';
 import { clubValues, siteConfig } from '@/lib/site';
 import { PageHero } from '@/components/layout/page-hero';
@@ -19,7 +20,7 @@ export default function AboutPage() {
       <PageHero
         title="About Us"
         subtitle="A community club with professional ambitions, proudly part of the Morecambe FC family."
-        image="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1920&q=80"
+        image="/gallery/stadium-training.jpg"
       />
 
       <Section>
@@ -45,6 +46,31 @@ export default function AboutPage() {
               We believe football has the power to build confidence, friendships
               and life skills. Every girl who pulls on a Morecambe shirt becomes
               part of something bigger than themselves.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-sm pitch-frame">
+            <Image
+              src="/gallery/trophy-celebration.jpg"
+              alt="Morecambe Girls FC players celebrating a tournament win with medals and a trophy"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+          <div>
+            <SectionHeader
+              title="Moments to Remember"
+              subtitle="Silverware, smiles and season highlights — just some of the memories our girls have made together."
+            />
+            <p className="text-pitch-600 leading-relaxed">
+              From tournament wins to first steps on the pitch, every season
+              brings new moments our players and families are proud of. These
+              are the memories that make Morecambe Girls FC feel like a family.
             </p>
           </div>
         </div>
