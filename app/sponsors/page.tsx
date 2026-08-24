@@ -53,12 +53,13 @@ export default function SponsorsPage() {
               tier={sponsor.tier}
               href={sponsor.href}
               logo={sponsor.logo}
+              logoBg={sponsor.logoBg}
             />
           ))}
         </div>
         <p className="mt-8 text-center text-sm text-pitch-500">
-          Sponsor logos can be updated easily — replace placeholder names with
-          your partners.
+          Thank you to every business supporting girls&apos; football in
+          Morecambe, Lancaster and Heysham.
         </p>
       </Section>
 
