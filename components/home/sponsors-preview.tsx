@@ -20,6 +20,7 @@ export function SponsorsPreview() {
             tier={sponsor.tier}
             href={sponsor.href}
             logo={sponsor.logo}
+            logoBg={sponsor.logoBg}
           />
         ))}
       </div>

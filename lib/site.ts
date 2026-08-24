@@ -200,6 +200,7 @@ export type Sponsor = {
   tier: string;
   href?: string;
   logo?: string;
+  logoBg?: 'light' | 'dark';
 };
 
 export const sponsors: Sponsor[] = [
@@ -209,12 +210,80 @@ export const sponsors: Sponsor[] = [
     href: 'https://mncoaching.co.uk',
     logo: '/mn-coaching-logo.png',
   },
-  { name: 'Local Business 1', tier: 'Principal Partner' },
-  { name: 'Local Business 2', tier: 'Gold Sponsor' },
-  { name: 'Local Business 3', tier: 'Gold Sponsor' },
-  { name: 'Local Business 4', tier: 'Silver Sponsor' },
-  { name: 'Local Business 5', tier: 'Silver Sponsor' },
-  { name: 'Local Business 6', tier: 'Community Partner' },
+  {
+    name: 'Alpha Signs & Design',
+    tier: 'Club Sponsor',
+    href: 'https://www.alphasignsanddesign.co.uk/',
+    logo: '/sponsors/alpha-signs-logo.png',
+  },
+  {
+    name: 'Barratt Homes',
+    tier: 'Club Sponsor',
+    href: 'https://www.barratthomes.co.uk/',
+    logo: '/sponsors/barratt-homes-logo.png',
+    logoBg: 'dark',
+  },
+  {
+    name: 'BDS Fuels',
+    tier: 'Club Sponsor',
+    href: 'https://www.bdsfuels.co.uk/',
+    logo: '/sponsors/bds-fuels-logo.png',
+  },
+  {
+    name: 'Cadman and Forrest',
+    tier: 'Club Sponsor',
+  },
+  {
+    name: 'Element',
+    tier: 'Club Sponsor',
+    href: 'https://www.element.com/',
+    logo: '/sponsors/element-logo.png',
+  },
+  {
+    name: 'Holcim',
+    tier: 'Club Sponsor',
+    href: 'https://www.holcim.co.uk/',
+    logo: '/sponsors/holcim-logo.svg',
+  },
+  {
+    name: 'Kendal Dance Academy',
+    tier: 'Club Sponsor',
+    href: 'https://www.kendaldanceacademy.co.uk/',
+    logo: '/sponsors/kendal-dance-academy-logo.png',
+  },
+  {
+    name: 'MB Baron',
+    tier: 'Club Sponsor',
+  },
+  {
+    name: 'Northwest Joinery',
+    tier: 'Club Sponsor',
+    href: 'https://www.gwnorthwest.com/',
+    logo: '/sponsors/northwest-joinery-logo.png',
+  },
+  {
+    name: 'SWS',
+    tier: 'Club Sponsor',
+    href: 'https://www.sws.co.uk/',
+    logo: '/sponsors/sws-logo.png',
+  },
+  {
+    name: 'Thermo Fisher',
+    tier: 'Club Sponsor',
+    href: 'https://www.thermofisher.com/uk/en/home.html',
+    logo: '/sponsors/thermo-fisher-logo.svg',
+  },
+  {
+    name: 'Transport Recovery',
+    tier: 'Club Sponsor',
+  },
+  {
+    name: 'Turner Scott',
+    tier: 'Club Sponsor',
+    href: 'https://www.turnerscott.co.uk/',
+    logo: '/sponsors/turner-scott-logo.svg',
+    logoBg: 'dark',
+  },
 ] as const;
 
 export const faqItems = [

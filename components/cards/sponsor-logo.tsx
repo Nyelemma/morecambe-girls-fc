@@ -1,32 +1,43 @@
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 type SponsorLogoProps = {
   name: string;
   tier?: string;
   href?: string;
   logo?: string;
+  logoBg?: 'light' | 'dark';
 };
 
-export function SponsorLogo({ name, tier, href, logo }: SponsorLogoProps) {
+export function SponsorLogo({
+  name,
+  tier,
+  href,
+  logo,
+  logoBg = 'light',
+}: SponsorLogoProps) {
   const content = (
     <>
       <div
-        className="flex h-16 w-full items-center justify-center rounded-sm bg-pitch-50"
+        className={cn(
+          'flex h-16 w-full items-center justify-center rounded-sm p-2',
+          logoBg === 'dark' ? 'bg-pitch-900' : 'bg-pitch-50'
+        )}
         aria-hidden
       >
         {logo ? (
-          <div className="relative h-14 w-14">
+          <div className="relative h-full w-full">
             <Image
               src={logo}
               alt=""
               fill
               className="object-contain"
-              sizes="56px"
+              sizes="200px"
             />
           </div>
         ) : (
-          <span className="font-display text-lg font-bold uppercase tracking-wider text-pitch-300">
-            {href ? name : 'Logo'}
+          <span className="font-display text-sm font-bold uppercase tracking-wider text-pitch-400">
+            {name}
           </span>
         )}
       </div>
