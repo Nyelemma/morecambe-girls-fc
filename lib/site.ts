@@ -211,6 +211,12 @@ export const sponsors: Sponsor[] = [
     logo: '/mn-coaching-logo.png',
   },
   {
+    name: 'AJ Joinery',
+    tier: 'Club Sponsor',
+    href: 'https://ajjoinery.co/',
+    logo: '/sponsors/aj-joinery-logo.jpg',
+  },
+  {
     name: 'Alpha Signs & Design',
     tier: 'Club Sponsor',
     href: 'https://www.alphasignsanddesign.co.uk/',
@@ -240,10 +246,21 @@ export const sponsors: Sponsor[] = [
     logo: '/sponsors/element-logo.png',
   },
   {
+    name: 'Heysham Trucks',
+    tier: 'Club Sponsor',
+    href: 'https://heyshamtrucks.co.uk/',
+    logo: '/sponsors/heysham-trucks-logo.png',
+  },
+  {
     name: 'Holcim',
     tier: 'Club Sponsor',
     href: 'https://www.holcim.co.uk/',
     logo: '/sponsors/holcim-logo.svg',
+  },
+  {
+    name: 'Jack Pearson Electrical Services',
+    tier: 'Club Sponsor',
+    href: 'https://www.jp-es.co.uk/',
   },
   {
     name: 'Kendal Dance Academy',
@@ -272,6 +289,12 @@ export const sponsors: Sponsor[] = [
     tier: 'Club Sponsor',
     href: 'https://www.thermofisher.com/uk/en/home.html',
     logo: '/sponsors/thermo-fisher-logo.svg',
+  },
+  {
+    name: 'W J Crowe & Son Decorators',
+    tier: 'Club Sponsor',
+    href: 'https://www.wjcroweandsondecorators.co.uk/',
+    logo: '/sponsors/wj-crowe-logo.png',
   },
   {
     name: 'Transport Recovery',
