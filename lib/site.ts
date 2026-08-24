@@ -20,7 +20,9 @@ export const siteConfig = {
       'https://www.thefa.com/football-rules-governance/safeguarding',
     parentsCodeOfConduct:
       'https://www.thefa.com/-/media/cfa/essexfa/files/welfare/fa-respect-code-of-conduct-spectators-parents.ashx',
+    kingsAward: 'https://kavs.dcms.gov.uk/',
   },
+  trainingAreas: ['Morecambe', 'Lancaster', 'Heysham'] as const,
   social: {
     facebook: 'https://facebook.com/morecambegirlsfc',
     instagram: 'https://instagram.com/morecambegirlsfc',
@@ -66,6 +68,7 @@ export type Team = {
   shortName: string;
   ageRange: string;
   description: string;
+  highlight?: string;
   isWildCats?: boolean;
 };
 
@@ -126,7 +129,9 @@ export const teams: Team[] = [
     name: 'U13 Reds',
     shortName: 'U13 Reds',
     ageRange: 'Under 13',
-    description: 'Preparing players for the demands of youth football.',
+    description:
+      'A highly competitive squad playing in the North West Super League, preparing players for the demands of youth football.',
+    highlight: 'North West Super League',
   },
   {
     slug: 'u13-blues',
@@ -140,7 +145,9 @@ export const teams: Team[] = [
     name: 'U14 Reds',
     shortName: 'U14 Reds',
     ageRange: 'Under 14',
-    description: 'Elite grassroots football with professional standards.',
+    description:
+      'Elite grassroots football with professional standards — Lancashire County Cup finalists.',
+    highlight: 'Lancs Cup Finalists',
   },
   {
     slug: 'u14-blues',
@@ -231,7 +238,7 @@ export const faqItems = [
   {
     question: 'Where do you train and play?',
     answer:
-      'Training and home fixtures take place at venues across the Morecambe area, including facilities linked to Morecambe FC. Exact training times and locations are shared with parents when you register. Contact us for current session details.',
+      'We train and play across Morecambe, Lancaster and Heysham, using a range of venues including facilities linked to Morecambe FC. Because the club plays across various locations, exact training times and venues are shared with parents when you register. Contact us for current session details.',
   },
   {
     question: 'What equipment do players need?',

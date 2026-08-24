@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Award } from 'lucide-react';
 import { siteConfig } from '@/lib/site';
 import { Button } from '@/components/ui/button';
 import { Container } from '@/components/layout/container';
@@ -28,10 +28,20 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
             From Wild Cats to U16, we provide a welcoming pathway for girls of
-            all abilities to develop their skills, make lifelong friends and
-            fall in love with football. Proudly part of the{' '}
-            {siteConfig.parentClub.name} family.
+            all abilities across Morecambe, Lancaster and Heysham to develop
+            their skills, make lifelong friends and fall in love with football.
+            Proudly part of the {siteConfig.parentClub.name} family.
           </p>
+          <a
+            href={siteConfig.links.kingsAward}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-2 rounded-sm bg-white/10 px-4 py-2 text-sm font-medium text-white/90 transition-colors hover:bg-white/15 hover:text-white"
+          >
+            <Award className="h-4 w-4 shrink-0 text-gold" aria-hidden />
+            Winners of The King&apos;s Award for Voluntary Service 2023
+            <span className="sr-only">(opens in a new tab)</span>
+          </a>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button href="/contact" variant="gold" size="lg">
               Join Our Club
