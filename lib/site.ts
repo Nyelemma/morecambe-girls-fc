@@ -104,6 +104,22 @@ export const teams: Team[] = [
     description: 'Growing technical ability and teamwork on and off the pitch.',
   },
   {
+    slug: 'u10-red',
+    name: 'U10 Red',
+    shortName: 'U10 Red',
+    ageRange: 'Under 10',
+    description:
+      'Building match confidence and technical skills through training and competitive football.',
+  },
+  {
+    slug: 'u10-blues',
+    name: 'U10 Blues',
+    shortName: 'U10 Blues',
+    ageRange: 'Under 10',
+    description:
+      'Building match confidence and technical skills through training and competitive football.',
+  },
+  {
     slug: 'under-11-reds',
     name: 'Under 11 Reds',
     shortName: 'Under 11 Reds',
@@ -254,6 +270,13 @@ export const sponsors: Sponsor[] = [
     logo: '/sponsors/element-logo.png',
   },
   {
+    name: 'Grahams Consultants',
+    tier: 'Club Sponsor',
+    href: 'https://www.grahamsconsultants.co.uk/',
+    logo: '/sponsors/grahams-consultants-logo.png',
+    logoBg: 'dark',
+  },
+  {
     name: 'Heysham Trucks',
     tier: 'Club Sponsor',
     href: 'https://heyshamtrucks.co.uk/',
@@ -328,7 +351,7 @@ export const faqItems = [
   {
     question: 'What age groups do you offer?',
     answer:
-      'We offer teams from Wild Cats (ages 5–11) through to U16. Our age groups include Under 7s, Under 8s, Under 9s, Under 11 Reds and Blues, Under 12s, U13 Reds and Blues, U14 Reds and Blues, U15 Reds and Blues, and U16s — giving girls a clear pathway from first steps in football to competitive youth football.',
+      'We offer teams from Wild Cats (ages 5–11) through to U16. Our age groups include Under 7s, Under 8s, Under 9s, U10 Red and Blues, Under 11 Reds and Blues, Under 12s, U13 Reds and Blues, U14 Reds and Blues, U15 Reds and Blues, and U16s — giving girls a clear pathway from first steps in football to competitive youth football.',
   },
   {
     question: 'Where do you train and play?',
