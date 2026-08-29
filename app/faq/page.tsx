@@ -29,7 +29,7 @@ export default function FaqPage() {
     <>
       <JsonLd data={faqPageSchema()} />
       <PageHero
-        title="Frequently Asked Questions"
+        title="FAQ"
         subtitle="Answers for parents looking to join girls football in Morecambe."
         image="/gallery/team-fun.jpg"
         imageAlt="Morecambe Girls FC players together after a session"

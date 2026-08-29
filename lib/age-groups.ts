@@ -24,7 +24,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U7 Football',
     description:
       'Join Morecambe Girls FC Under 7s — junior girls football in Morecambe for young players building confidence, friendships and a love of the game.',
-    h1: 'Under 7s Girls Football',
+    h1: 'Under 7s',
     intro:
       'Our Under 7s is the first age-group team at Morecambe Girls FC. Sessions focus on enjoyment, confidence and the basics of football, so girls from Morecambe, Lancaster, Heysham and nearby communities can start playing with friends.',
     focus:
@@ -42,7 +42,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U8 Football',
     description:
       'Morecambe Girls U8 football — structured training and matches for girls developing fundamental skills at Morecambe Girls FC.',
-    h1: 'Under 8s Girls Football',
+    h1: 'Under 8s',
     intro:
       'The Under 8s help girls take the next step from first kicks into more structured training and matches. Players learn the fundamentals while staying part of a welcoming Morecambe girls football club.',
     focus:
@@ -60,7 +60,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U9 Football',
     description:
       'Morecambe Girls U9 football at Morecambe Girls FC — growing technical ability, teamwork and match confidence in Lancashire.',
-    h1: 'Under 9s Girls Football',
+    h1: 'Under 9s',
     intro:
       'Our Under 9s develop technical ability and teamwork on and off the pitch. The squad is part of the club pathway for girls football in Morecambe and the surrounding district.',
     focus:
@@ -78,7 +78,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U10 Football',
     description:
       'Morecambe Girls U10 football — U10 Red and U10 Blues squads at Morecambe Girls FC, building match confidence through training and competitive football.',
-    h1: 'Under 10s Girls Football',
+    h1: 'Under 10s',
     intro:
       'Morecambe Girls FC has two Under 10 squads — U10 Red and U10 Blues. Both teams help girls build match confidence and technical skills through weekly training and competitive football.',
     focus:
@@ -96,7 +96,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U11 Football',
     description:
       'Morecambe Girls U11 football — Under 11 Reds and Blues at Morecambe Girls FC, developing tactical awareness in competitive league football.',
-    h1: 'Under 11s Girls Football',
+    h1: 'Under 11s',
     intro:
       'The Under 11 Reds and Under 11 Blues play competitive league football while continuing to develop tactical awareness and match intelligence.',
     focus:
@@ -114,7 +114,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U12 Football',
     description:
       'Morecambe Girls U12 football — league football and individual development for girls at Morecambe Girls FC in Lancashire.',
-    h1: 'Under 12s Girls Football',
+    h1: 'Under 12s',
     intro:
       'Our Under 12s compete in league football while coaches nurture each player’s potential. The team is part of Morecambe Girls FC’s pathway from Wild Cats through to U16.',
     focus:
@@ -132,7 +132,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U13 Football',
     description:
       'Morecambe Girls U13 football — U13 Reds play in the North West Super League, with U13 Blues preparing players for the demands of youth football.',
-    h1: 'Under 13s Girls Football',
+    h1: 'Under 13s',
     intro:
       'The Under 13s include U13 Reds, a highly competitive squad playing in the North West Super League, and U13 Blues, who prepare players for the demands of youth football.',
     focus:
@@ -150,7 +150,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U14 Football',
     description:
       'Morecambe Girls U14 football — U14 Reds are Lancashire County Cup finalists, with U14 Blues offering elite grassroots football at Morecambe Girls FC.',
-    h1: 'Under 14s Girls Football',
+    h1: 'Under 14s',
     intro:
       'Our Under 14s play elite grassroots football with professional standards. U14 Reds are Lancashire County Cup finalists, and U14 Blues give more players the chance to compete at this age group.',
     focus:
@@ -168,7 +168,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U15 Football',
     description:
       'Morecambe Girls U15 football — U15 Reds and Blues offering high-performance training and competitive league fixtures at Morecambe Girls FC.',
-    h1: 'Under 15s Girls Football',
+    h1: 'Under 15s',
     intro:
       'The Under 15 Reds and Under 15 Blues provide high-performance training and competitive league fixtures for girls approaching the top of the junior pathway.',
     focus:
@@ -186,7 +186,7 @@ export const ageGroups: AgeGroup[] = [
     title: 'Morecambe Girls U16 Football',
     description:
       'Morecambe Girls U16 football — the senior youth team at Morecambe Girls FC, preparing players for adult football in Lancashire.',
-    h1: 'Under 16s Girls Football',
+    h1: 'U16s',
     intro:
       'The U16s are our senior youth team, preparing players for adult football, college programmes and further opportunities after junior football.',
     focus:
