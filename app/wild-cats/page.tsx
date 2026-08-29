@@ -59,7 +59,7 @@ export default function WildCatsPage() {
         })}
       />
       <PageHero
-        title="Wild Cats Football"
+        title="Wild Cats"
         subtitle="Fun football in Morecambe for girls aged 5–11 — no experience needed."
         image="/gallery/wildcats-training.jpg"
         imageAlt="Young girls enjoying a Wild Cats football session"

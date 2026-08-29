@@ -28,7 +28,7 @@ export default function TeamsPage() {
     <>
       <JsonLd data={teamsCollectionSchema()} />
       <PageHero
-        title="Girls Football Teams"
+        title="Our Teams"
         subtitle="A complete pathway from Wild Cats to U16, with girls football teams for every age group in Morecambe, Lancaster and Heysham."
         image="/gallery/match-action.jpg"
         imageAlt="Morecambe Girls FC players competing in a match"
