@@ -46,7 +46,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        title="Contact Morecambe Girls FC"
+        title="Contact Us"
         subtitle="We'd love to hear from you — whether you're a parent, player or potential sponsor."
         image="/gallery/team-fun.jpg"
         imageAlt="Morecambe Girls FC players enjoying a session together"

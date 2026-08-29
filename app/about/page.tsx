@@ -27,7 +27,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="About Morecambe Girls FC"
+        title="About Us"
         subtitle="A community girls football club with professional ambitions, proudly part of the Morecambe FC family."
         image="/gallery/stadium-training.jpg"
         imageAlt="Morecambe Girls FC players training together"
