@@ -10,12 +10,20 @@ import { SectionHeader } from '@/components/ui/section-header';
 import { SponsorLogo } from '@/components/cards/sponsor-logo';
 import { CtaBanner } from '@/components/ui/section-header';
 import { Check } from 'lucide-react';
+import { Breadcrumbs } from '@/components/seo/breadcrumbs';
 
 export const metadata = createPageMetadata({
-  title: 'Sponsors',
+  title: 'Sponsors | Support Girls Football in Morecambe',
   description:
-    'Support Morecambe Girls FC and gain visibility in the local community. View our sponsors and sponsorship opportunities.',
+    'Meet the local businesses supporting Morecambe Girls FC and find out how to sponsor girls football in Morecambe, Lancaster and Heysham.',
   path: '/sponsors',
+  keywords: [
+    'Morecambe Girls FC sponsors',
+    'sponsor girls football Morecambe',
+    'community football sponsors Lancashire',
+  ],
+  ogImage: '/gallery/trophy-celebration.jpg',
+  ogImageAlt: 'Morecambe Girls FC players celebrating with a trophy',
 });
 
 export default function SponsorsPage() {
@@ -23,11 +31,18 @@ export default function SponsorsPage() {
     <>
       <PageHero
         title="Our Sponsors"
-        subtitle="Thank you to the businesses who believe in girls' football."
-        image="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=1920&q=80"
+        subtitle="Thank you to the businesses who believe in girls' football in Morecambe."
+        image="/gallery/trophy-celebration.jpg"
+        imageAlt="Morecambe Girls FC players celebrating a tournament win"
       />
 
       <Section>
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: 'Sponsors', path: '/sponsors' },
+          ]}
+        />
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-lg leading-relaxed text-pitch-600">
             Morecambe Girls FC is grateful to the local businesses and

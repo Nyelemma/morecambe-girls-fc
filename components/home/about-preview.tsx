@@ -15,10 +15,10 @@ export function AboutPreview() {
           />
           <p className="mb-4 text-pitch-600 leading-relaxed">
             Founded with the ambition to grow girls&apos; football in Morecambe,
-            our club offers a clear pathway from first steps in the game through
-            to competitive youth football. We share the values and colours of
-            Morecambe FC, creating a sense of belonging that extends from the
-            grassroots to the professional game.
+            Lancaster and Heysham, our club offers a clear pathway from first
+            steps in the game through to competitive youth football. We share
+            the values and colours of Morecambe FC, creating a sense of
+            belonging that extends from the grassroots to the professional game.
           </p>
           <p className="mb-8 text-pitch-600 leading-relaxed">
             Our qualified coaches focus on technical development, teamwork and

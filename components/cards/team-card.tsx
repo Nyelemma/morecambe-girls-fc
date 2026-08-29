@@ -1,20 +1,20 @@
+import Link from 'next/link';
 import { Trophy } from 'lucide-react';
 import type { Team } from '@/lib/site';
+import { getTeamPageHref } from '@/lib/age-groups';
 import { cn } from '@/lib/utils';
 
 type TeamCardProps = {
   team: Team;
   className?: string;
+  linked?: boolean;
 };
 
-export function TeamCard({ team, className }: TeamCardProps) {
-  return (
-    <article
-      className={cn(
-        'relative flex flex-col overflow-hidden rounded-sm border border-pitch-100 bg-white p-6 shadow-sm',
-        className
-      )}
-    >
+export function TeamCard({ team, className, linked = true }: TeamCardProps) {
+  const href = getTeamPageHref(team.slug, team.isWildCats);
+
+  const content = (
+    <>
       <div className="absolute inset-x-0 top-0 h-1 bg-gold" aria-hidden />
       <p className="font-display text-xs font-semibold uppercase tracking-widest text-gold-600">
         {team.ageRange}
@@ -31,6 +31,22 @@ export function TeamCard({ team, className }: TeamCardProps) {
           {team.highlight}
         </p>
       )}
-    </article>
+    </>
+  );
+
+  const sharedClassName = cn(
+    'relative flex flex-col overflow-hidden rounded-sm border border-pitch-100 bg-white p-6 shadow-sm',
+    linked && 'transition-all hover:-translate-y-0.5 hover:shadow-md',
+    className
+  );
+
+  if (!linked) {
+    return <article className={sharedClassName}>{content}</article>;
+  }
+
+  return (
+    <Link href={href} className={sharedClassName} aria-label={`View ${team.name}`}>
+      {content}
+    </Link>
   );
 }

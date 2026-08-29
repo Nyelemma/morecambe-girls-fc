@@ -24,13 +24,13 @@ export function Hero() {
             {siteConfig.name}
           </p>
           <h1 className="font-display text-4xl font-bold uppercase leading-[1.1] tracking-wide text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            {siteConfig.tagline}
+            Inspiring Girls&apos; Football in Morecambe
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
-            From Wild Cats to U16, we provide a welcoming pathway for girls of
-            all abilities across Morecambe, Lancaster and Heysham to develop
-            their skills, make lifelong friends and fall in love with football.
-            Proudly part of the {siteConfig.parentClub.name} family.
+            {siteConfig.tagline}. From Wild Cats to U16, Morecambe Girls FC
+            offers a welcoming pathway for girls of all abilities across
+            Morecambe, Lancaster, Heysham, Bare and Carnforth. Proudly part of
+            the {siteConfig.parentClub.name} family.
           </p>
           <a
             href={siteConfig.links.kingsAward}

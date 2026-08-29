@@ -4,13 +4,21 @@ import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { ContactForm } from '@/components/forms/contact-form';
+import { Breadcrumbs } from '@/components/seo/breadcrumbs';
 import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 
 export const metadata = createPageMetadata({
-  title: 'Contact',
+  title: 'Contact Morecambe Girls FC | Join Girls Football',
   description:
-    'Get in touch with Morecambe Girls FC for player registration, general enquiries or sponsorship opportunities.',
+    'Contact Morecambe Girls FC to join girls football in Morecambe. Register a player, ask about Wild Cats or U7–U16 teams, or enquire about sponsorship.',
   path: '/contact',
+  keywords: [
+    'contact Morecambe Girls FC',
+    'join girls football Morecambe',
+    'register girls football Morecambe',
+  ],
+  ogImage: '/gallery/team-fun.jpg',
+  ogImageAlt: 'Morecambe Girls FC players enjoying football together',
 });
 
 const enquiryTypes = [
@@ -38,12 +46,19 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        title="Contact Us"
+        title="Contact Morecambe Girls FC"
         subtitle="We'd love to hear from you — whether you're a parent, player or potential sponsor."
         image="/gallery/team-fun.jpg"
+        imageAlt="Morecambe Girls FC players enjoying a session together"
       />
 
       <Section>
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: 'Contact', path: '/contact' },
+          ]}
+        />
         <div className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <SectionHeader title="Get in Touch" />
@@ -110,10 +125,11 @@ export default function ContactPage() {
                 Where We Train
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-pitch-600">
-                We train and play across Morecambe, Lancaster and Heysham — the
-                club uses a range of venues rather than a single ground, so
-                exact locations and times are shared with parents when you
-                register.
+                We train and play across Morecambe, Lancaster and Heysham. Girls
+                from Bare, Carnforth and the wider Lancashire area are welcome
+                to enquire. The club uses a range of venues rather than a
+                single ground, so exact locations and times are shared with
+                parents when you register.
               </p>
             </div>
 

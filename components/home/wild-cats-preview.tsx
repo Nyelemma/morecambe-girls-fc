@@ -9,7 +9,7 @@ export function WildCatsPreview() {
         <div className="relative aspect-video overflow-hidden rounded-sm pitch-frame">
           <Image
             src="/wild-cats-homepage.jpg"
-            alt="Young girls enjoying football at Wild Cats session"
+            alt="Young girls enjoying Wild Cats football in Morecambe"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

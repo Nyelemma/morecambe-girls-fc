@@ -28,7 +28,7 @@ export function Logo({
     <Link href="/" className={cn('group flex items-center gap-3', className)}>
       <Image
         src={siteConfig.brand.logo}
-        alt={`${siteConfig.parentClub.name} club badge`}
+        alt="Morecambe Girls FC club badge"
         width={64}
         height={64}
         className={cn(

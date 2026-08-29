@@ -14,8 +14,8 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Logo variant="light" showTagline badgeSize="lg" />
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              Inspiring the next generation of footballers across Morecambe,
-              Lancaster and Heysham. Proudly part of the{' '}
+              Inspiring girls&apos; football across Morecambe, Lancaster,
+              Heysham, Bare and Carnforth. Proudly part of the{' '}
               {siteConfig.parentClub.name} family.
             </p>
             <a
@@ -157,8 +157,8 @@ export function Footer() {
             </div>
 
             <p className="mt-6 text-xs leading-relaxed text-white/50">
-              With thanks to our sponsors for supporting girls&apos; football in
-              Morecambe.
+              With thanks to our sponsors for supporting girls&apos; football
+              in Morecambe, Lancaster and Heysham.
             </p>
           </div>
         </div>
