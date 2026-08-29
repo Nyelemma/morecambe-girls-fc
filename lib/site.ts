@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     'Morecambe Girls FC is a grassroots girls football club in Morecambe, Lancaster and Heysham, offering a pathway from Wild Cats through to U16. Part of the Morecambe FC family.',
   url: 'https://www.morecambegirlsfc.co.uk',
-  email: 'info@morecambegirlsfc.co.uk',
+  email: 'morecambegirlsfc@gmail.com',
   contacts: {
     chairman: {
       name: 'Nick Barrett',
@@ -376,7 +376,7 @@ export const faqItems: readonly FaqItem[] = [
   {
     question: 'How do I join Morecambe Girls FC?',
     answer:
-      'Get in touch via our contact page or email us at info@morecambegirlsfc.co.uk. Tell us your daughter\'s age and experience level, and we\'ll guide you to the right team or Wild Cats session. All new players are welcome to attend a taster session.',
+      'Get in touch via our contact page or email us at morecambegirlsfc@gmail.com. Tell us your daughter\'s age and experience level, and we\'ll guide you to the right team or Wild Cats session. All new players are welcome to attend a taster session.',
     links: [
       { label: 'Contact Morecambe Girls FC', href: '/contact' },
       { label: 'View our teams', href: '/teams' },
@@ -432,7 +432,7 @@ export const faqItems: readonly FaqItem[] = [
   {
     question: 'How do I contact Morecambe Girls FC?',
     answer:
-      'Use our contact form, email info@morecambegirlsfc.co.uk, or call Chairman Nick Barrett on 07814 276448. For team-specific questions, include the age group in your message and we will connect you with the right coach.',
+      'Use our contact form, email morecambegirlsfc@gmail.com, or call Chairman Nick Barrett on 07814 276448. For team-specific questions, include the age group in your message and we will connect you with the right coach.',
     links: [{ label: 'Contact page', href: '/contact' }],
   },
   {
