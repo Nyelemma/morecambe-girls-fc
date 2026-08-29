@@ -29,7 +29,7 @@ export function SponsorLogo({
           <div className="relative h-full w-full">
             <Image
               src={logo}
-              alt=""
+              alt={`${name} logo`}
               fill
               className="object-contain"
               sizes="200px"

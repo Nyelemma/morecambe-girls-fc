@@ -4,9 +4,10 @@ import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 
 export const metadata = createPageMetadata({
-  title: 'Privacy Policy',
+  title: 'Privacy Policy | Morecambe Girls FC',
   description: `Privacy policy for ${siteConfig.name}. How we collect, use and protect your personal information.`,
   path: '/privacy',
+  robots: { index: true, follow: true },
 });
 
 export default function PrivacyPage() {

@@ -1,30 +1,48 @@
 import { createPageMetadata } from '@/lib/metadata';
 import { faqItems, siteConfig } from '@/lib/site';
+import { faqPageSchema } from '@/lib/schema';
 import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { Accordion } from '@/components/ui/accordion';
 import { CtaBanner } from '@/components/ui/section-header';
 import { Button } from '@/components/ui/button';
+import { Breadcrumbs } from '@/components/seo/breadcrumbs';
+import { JsonLd } from '@/components/seo/json-ld';
 
 export const metadata = createPageMetadata({
-  title: 'FAQ',
+  title: 'Join Morecambe Girls FC | Age Groups & FAQ',
   description:
-    'Frequently asked questions about joining Morecambe Girls FC — age groups, training, equipment, costs and more.',
+    'Answers for parents joining Morecambe Girls FC: age groups, Wild Cats, training in Morecambe, beginners, costs and how to get in touch.',
   path: '/faq',
+  keywords: [
+    'join Morecambe Girls FC',
+    'girls football Morecambe FAQ',
+    'how to join girls football Morecambe',
+  ],
+  ogImage: '/gallery/team-fun.jpg',
+  ogImageAlt: 'Morecambe Girls FC players together after a session',
 });
 
 export default function FaqPage() {
   return (
     <>
+      <JsonLd data={faqPageSchema()} />
       <PageHero
-        title="FAQ"
-        subtitle="Answers to the questions parents and players ask most often."
-        image="https://images.unsplash.com/photo-1551958219-acbc608c6377?w=1920&q=80"
+        title="Frequently Asked Questions"
+        subtitle="Answers for parents looking to join girls football in Morecambe."
+        image="/gallery/team-fun.jpg"
+        imageAlt="Morecambe Girls FC players together after a session"
         size="default"
       />
 
       <Section>
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: 'FAQ', path: '/faq' },
+          ]}
+        />
         <SectionHeader
           title="Common Questions"
           subtitle="Can't find what you're looking for? Get in touch and we'll be happy to help."

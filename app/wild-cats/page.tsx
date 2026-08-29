@@ -1,16 +1,26 @@
 import { createPageMetadata } from '@/lib/metadata';
 import { siteConfig } from '@/lib/site';
+import { sportsTeamSchema } from '@/lib/schema';
 import { PageHero } from '@/components/layout/page-hero';
 import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { CtaBanner } from '@/components/ui/section-header';
 import { Button } from '@/components/ui/button';
+import { Breadcrumbs } from '@/components/seo/breadcrumbs';
+import { JsonLd } from '@/components/seo/json-ld';
 
 export const metadata = createPageMetadata({
-  title: 'Wild Cats',
+  title: 'Wild Cats Football in Morecambe | Morecambe Girls FC',
   description:
-    'Wild Cats is Morecambe Girls FC\'s fun, non-competitive football programme for girls aged 5–11. No experience needed — all abilities welcome.',
+    'Wild Cats football in Morecambe for girls aged 5–11. Fun, non-competitive sessions at Morecambe Girls FC. No experience needed — beginners welcome.',
   path: '/wild-cats',
+  keywords: [
+    'Wild Cats football Morecambe',
+    'girls football beginners Morecambe',
+    'junior girls football Morecambe',
+  ],
+  ogImage: '/gallery/wildcats-training.jpg',
+  ogImageAlt: 'Girls enjoying a Wild Cats football session in Morecambe',
 });
 
 const benefits = [
@@ -32,31 +42,48 @@ const benefits = [
   {
     title: 'Pathway to Teams',
     description:
-      'Wild Cats is the perfect stepping stone to our age-group teams when girls are ready for more structured football.',
+      'Wild Cats is the perfect stepping stone to our age-group teams, from Under 7s through to U16, when girls are ready for more structured football.',
   },
 ];
 
 export default function WildCatsPage() {
   return (
     <>
+      <JsonLd
+        data={sportsTeamSchema({
+          name: 'Morecambe Girls FC Wild Cats',
+          description:
+            'Wild Cats football in Morecambe for girls aged 5–11. Fun, non-competitive sessions at Morecambe Girls FC.',
+          path: '/wild-cats',
+          image: '/gallery/wildcats-training.jpg',
+        })}
+      />
       <PageHero
-        title="Wild Cats"
-        subtitle="Fun football for girls aged 5–11 — no experience needed."
+        title="Wild Cats Football"
+        subtitle="Fun football in Morecambe for girls aged 5–11 — no experience needed."
         image="/gallery/wildcats-training.jpg"
+        imageAlt="Young girls enjoying a Wild Cats football session"
         size="large"
         overlay="dark"
       />
 
       <Section>
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: 'Teams', path: '/teams' },
+            { name: 'Wild Cats', path: '/wild-cats' },
+          ]}
+        />
         <div className="mx-auto max-w-3xl">
           <SectionHeader title="What is Wild Cats?" />
           <div className="space-y-4 text-pitch-600 leading-relaxed">
             <p>
               Wild Cats is a nationwide initiative supported by The FA, designed
               to give girls their first experience of football. At Morecambe Girls
-              FC, our Wild Cats programme offers weekly sessions where girls can
-              learn basic skills, make new friends and discover a love for the
-              game.
+              FC, our Wild Cats programme offers weekly sessions in Morecambe
+              and the surrounding area where girls can learn basic skills, make
+              new friends and discover a love for the game.
             </p>
             <p>
               There are no league matches or competitive pressure — just fun,
@@ -163,6 +190,8 @@ export default function WildCatsPage() {
           description="Wild Cats sessions are running now. Spaces are limited — register your interest today."
           primaryLabel="Get in Touch"
           primaryHref="/contact"
+          secondaryLabel="View Age-Group Teams"
+          secondaryHref="/teams"
         />
       </Section>
     </>

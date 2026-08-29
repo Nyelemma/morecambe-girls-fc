@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'MGFC',
   tagline: 'Inspiring the Next Generation of Footballers',
   description:
-    'Morecambe Girls FC is a thriving grassroots girls\' football club in Lancashire, offering pathways from Wild Cats through to U16. Part of the Morecambe FC family.',
+    'Morecambe Girls FC is a grassroots girls football club in Morecambe, Lancaster and Heysham, offering a pathway from Wild Cats through to U16. Part of the Morecambe FC family.',
   url: 'https://www.morecambegirlsfc.co.uk',
   email: 'info@morecambegirlsfc.co.uk',
   contacts: {
@@ -23,6 +23,14 @@ export const siteConfig = {
     kingsAward: 'https://kavs.dcms.gov.uk/',
   },
   trainingAreas: ['Morecambe', 'Lancaster', 'Heysham'] as const,
+  areasServed: [
+    'Morecambe',
+    'Lancaster',
+    'Heysham',
+    'Bare',
+    'Carnforth',
+    'Lancashire',
+  ] as const,
   social: {
     facebook: 'https://facebook.com/morecambegirlsfc',
     instagram: 'https://instagram.com/morecambegirlsfc',
@@ -55,7 +63,23 @@ export type NavLink = {
 export const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Our Teams', href: '/teams' },
+  {
+    label: 'Our Teams',
+    href: '/teams',
+    children: [
+      { label: 'Wild Cats', href: '/wild-cats' },
+      { label: 'Under 7s', href: '/teams/u7' },
+      { label: 'Under 8s', href: '/teams/u8' },
+      { label: 'Under 9s', href: '/teams/u9' },
+      { label: 'Under 10s', href: '/teams/u10' },
+      { label: 'Under 11s', href: '/teams/u11' },
+      { label: 'Under 12s', href: '/teams/u12' },
+      { label: 'Under 13s', href: '/teams/u13' },
+      { label: 'Under 14s', href: '/teams/u14' },
+      { label: 'Under 15s', href: '/teams/u15' },
+      { label: 'U16s', href: '/teams/u16' },
+    ],
+  },
   { label: 'Wild Cats', href: '/wild-cats' },
   { label: 'Sponsors', href: '/sponsors' },
   { label: 'FAQ', href: '/faq' },
@@ -342,21 +366,57 @@ export const sponsors: Sponsor[] = [
   },
 ] as const;
 
-export const faqItems = [
+export type FaqItem = {
+  question: string;
+  answer: string;
+  links?: readonly { label: string; href: string }[];
+};
+
+export const faqItems: readonly FaqItem[] = [
   {
     question: 'How do I join Morecambe Girls FC?',
     answer:
       'Get in touch via our contact page or email us at info@morecambegirlsfc.co.uk. Tell us your daughter\'s age and experience level, and we\'ll guide you to the right team or Wild Cats session. All new players are welcome to attend a taster session.',
+    links: [
+      { label: 'Contact Morecambe Girls FC', href: '/contact' },
+      { label: 'View our teams', href: '/teams' },
+    ],
   },
   {
-    question: 'What age groups do you offer?',
+    question: 'What age groups does Morecambe Girls FC offer?',
     answer:
       'We offer teams from Wild Cats (ages 5–11) through to U16. Our age groups include Under 7s, Under 8s, Under 9s, U10 Red and Blues, Under 11 Reds and Blues, Under 12s, U13 Reds and Blues, U14 Reds and Blues, U15 Reds and Blues, and U16s — giving girls a clear pathway from first steps in football to competitive youth football.',
+    links: [
+      { label: 'Girls football teams in Morecambe', href: '/teams' },
+      { label: 'Wild Cats programme', href: '/wild-cats' },
+    ],
   },
   {
-    question: 'Where do you train and play?',
+    question: 'Where do Morecambe Girls FC train?',
     answer:
-      'We train and play across Morecambe, Lancaster and Heysham, using a range of venues including facilities linked to Morecambe FC. Because the club plays across various locations, exact training times and venues are shared with parents when you register. Contact us for current session details.',
+      'We train and play across Morecambe, Lancaster and Heysham, using a range of venues including facilities linked to Morecambe FC. Girls from nearby communities such as Bare and Carnforth also play with the club. Because sessions take place at various locations, exact training times and venues are shared with parents when you register.',
+    links: [{ label: 'Ask about current session details', href: '/contact' }],
+  },
+  {
+    question: 'What is Wild Cats?',
+    answer:
+      'Wild Cats is Morecambe Girls FC\'s fun, non-competitive football programme for girls aged 5–11. It is designed for first steps in the game, with no league pressure — just enjoyable sessions led by FA-qualified coaches. It is also a natural stepping stone into our age-group teams.',
+    links: [{ label: 'Wild Cats football in Morecambe', href: '/wild-cats' }],
+  },
+  {
+    question: 'Does my daughter need previous football experience?',
+    answer:
+      'No. Girls of all abilities are welcome, including complete beginners. Wild Cats is the usual starting point for girls taking their first steps, and our coaches are experienced in helping new players build confidence before they join a team.',
+    links: [
+      { label: 'Learn about Wild Cats', href: '/wild-cats' },
+      { label: 'See age-group teams', href: '/teams' },
+    ],
+  },
+  {
+    question: 'Can beginners join?',
+    answer:
+      'Absolutely. We welcome girls of all abilities, including complete beginners. Our Wild Cats programme is perfect for girls taking their first steps in football, and our coaches are experienced in helping new players settle in.',
+    links: [{ label: 'Register interest', href: '/contact' }],
   },
   {
     question: 'What equipment do players need?',
@@ -364,26 +424,24 @@ export const faqItems = [
       'Players need football boots (moulded studs for grass, trainers for astroturf), shin pads, a water bottle and suitable training kit. Match kit is provided by the club. Download our Welcome Pack for a full kit list and club information.',
   },
   {
-    question: 'Can beginners join?',
-    answer:
-      'Absolutely! We welcome girls of all abilities, including complete beginners. Our Wild Cats programme is perfect for girls taking their first steps in football, and our coaches are experienced in helping new players build confidence.',
-  },
-  {
-    question: 'How do I contact a coach?',
-    answer:
-      'For general enquiries, use our contact form or email info@morecambegirlsfc.co.uk. For team-specific questions, include the age group in your message and we\'ll connect you with the right coach.',
-  },
-  {
-    question: 'How much does it cost to play?',
+    question: 'How much does girls football cost at Morecambe Girls FC?',
     answer:
       'Fees vary by age group and cover coaching, league registration and club membership. Full details are included in our Welcome Pack. We are committed to keeping football accessible and can discuss support options where needed.',
+    links: [{ label: 'Contact the club about fees', href: '/contact' }],
+  },
+  {
+    question: 'How do I contact Morecambe Girls FC?',
+    answer:
+      'Use our contact form, email info@morecambegirlsfc.co.uk, or call Chairman Nick Barrett on 07814 276448. For team-specific questions, include the age group in your message and we will connect you with the right coach.',
+    links: [{ label: 'Contact page', href: '/contact' }],
   },
   {
     question: 'Is Morecambe Girls FC linked to Morecambe FC?',
     answer:
       'Yes. Morecambe Girls FC is proud to be part of the Morecambe FC family, sharing the club\'s values, colours and commitment to developing football in our community.',
+    links: [{ label: 'About the club', href: '/about' }],
   },
-] as const;
+];
 
 export const sponsorshipBenefits = [
   'Brand visibility across our website, social media and matchday materials',

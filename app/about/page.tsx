@@ -6,25 +6,40 @@ import { Section } from '@/components/layout/section';
 import { SectionHeader } from '@/components/ui/section-header';
 import { CtaBanner } from '@/components/ui/section-header';
 import { Button } from '@/components/ui/button';
+import { Breadcrumbs } from '@/components/seo/breadcrumbs';
 import { Award, ExternalLink } from 'lucide-react';
 
 export const metadata = createPageMetadata({
-  title: 'About Us',
+  title: 'About Morecambe Girls FC | Girls Football Club',
   description:
-    'Learn about Morecambe Girls FC — our mission, values and commitment to developing young female footballers in Lancashire.',
+    'Learn about Morecambe Girls FC, a community girls football club in Morecambe and Lancaster. Our mission, values and pathway from Wild Cats to U16.',
   path: '/about',
+  keywords: [
+    'About Morecambe Girls FC',
+    'girls football club Morecambe',
+    'girls football Lancashire',
+  ],
+  ogImage: '/gallery/stadium-training.jpg',
+  ogImageAlt: 'Morecambe Girls FC players training at the stadium',
 });
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="About Us"
-        subtitle="A community club with professional ambitions, proudly part of the Morecambe FC family."
+        title="About Morecambe Girls FC"
+        subtitle="A community girls football club with professional ambitions, proudly part of the Morecambe FC family."
         image="/gallery/stadium-training.jpg"
+        imageAlt="Morecambe Girls FC players training together"
       />
 
       <Section>
+        <Breadcrumbs
+          items={[
+            { name: 'Home', path: '/' },
+            { name: 'About', path: '/about' },
+          ]}
+        />
         <div className="mx-auto max-w-3xl">
           <SectionHeader title="Our Story" />
           <div className="prose-pitch space-y-4 text-pitch-600 leading-relaxed">
@@ -49,8 +64,10 @@ export default function AboutPage() {
               part of something bigger than themselves.
             </p>
             <p>
-              We train and play across Morecambe, Lancaster and Heysham, giving
-              girls throughout the district the chance to be part of the club.
+              We train and play across Morecambe, Lancaster and Heysham, and
+              welcome girls from nearby communities including Bare and
+              Carnforth. The aim is simple: give girls throughout the district
+              a place to play football and belong.
             </p>
           </div>
         </div>
@@ -167,7 +184,7 @@ export default function AboutPage() {
             {
               step: '02',
               title: 'Youth Teams',
-              text: 'Age-group teams from U7 to U16 with structured training and league competition.',
+              text: 'Age-group teams from U7 to U16 — including U10 Red and Blues — with structured training and league competition.',
             },
             {
               step: '03',

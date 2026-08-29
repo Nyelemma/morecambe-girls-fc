@@ -6,6 +6,7 @@ type PageHeroProps = {
   title: string;
   subtitle?: string;
   image?: string | null;
+  imageAlt?: string;
   size?: 'default' | 'large';
   overlay?: 'dark' | 'shrimp';
 };
@@ -13,7 +14,8 @@ type PageHeroProps = {
 export function PageHero({
   title,
   subtitle,
-  image = 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80',
+  image = '/gallery/match-action.jpg',
+  imageAlt = '',
   size = 'default',
   overlay = 'dark',
 }: PageHeroProps) {
@@ -27,7 +29,7 @@ export function PageHero({
       {image && (
         <Image
           src={image}
-          alt=""
+            alt={imageAlt}
           fill
           priority
           className="object-cover"

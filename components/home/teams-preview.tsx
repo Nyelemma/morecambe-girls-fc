@@ -13,7 +13,7 @@ export function TeamsPreview() {
     <Section id="teams">
       <SectionHeader
         title="Our Teams"
-        subtitle="From Wild Cats to U16, we offer age-appropriate football for girls at every stage of their journey."
+        subtitle="From Wild Cats to U16, we offer age-appropriate girls football in Morecambe for every stage of the journey."
         align="center"
       />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

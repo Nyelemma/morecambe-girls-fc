@@ -1,12 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type AccordionItem = {
   question: string;
   answer: string;
+  links?: readonly { label: string; href: string }[];
 };
 
 type AccordionProps = {
@@ -50,6 +52,20 @@ export function Accordion({ items }: AccordionProps) {
                 <p className="px-6 pb-5 text-pitch-600 leading-relaxed">
                   {item.answer}
                 </p>
+                {item.links && item.links.length > 0 && (
+                  <ul className="flex flex-wrap gap-x-4 gap-y-2 px-6 pb-5 text-sm">
+                    {item.links.map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="font-medium text-shrimp hover:underline"
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           </div>
